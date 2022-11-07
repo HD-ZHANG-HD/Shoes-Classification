@@ -1,0 +1,20 @@
+dataset: Shoe vs Sandal vs Boot Image Dataset
+nclass: 3
+lr: 0.0001
+trainsize: 
+batchsize: 36
+shuffle: True
+num_workers: 8
+pin_memory: True
+
+
+gpu_id: 0
+load: './pretrained/resnet50.pth'
+save_path: './snapshot/'
+image_root: './dataest'
+val_root: './dataset'
+
+dir:
+  Boot: 0
+  Sandal: 1
+  Shoe: 2
