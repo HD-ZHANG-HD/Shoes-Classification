@@ -99,13 +99,8 @@ def val(test_loader, model, epoch, save_path, writer):
 
 
 if __name__ == '__main__':
-    import argparse
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--config', type=str, default='./configs/shoes.yaml')
-    opt = parser.parse_args()
-
-    cfg = yaml.load(open(opt.config, "r"), Loader=yaml.Loader)
+    cfg = yaml.load(open('./configs/shoes.yaml', "r"), Loader=yaml.Loader)
 
     # set the device for training
     if cfg['gpu_id'] == '0':

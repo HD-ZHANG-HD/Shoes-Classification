@@ -6,8 +6,9 @@ batchsize: 36
 shuffle: True
 num_workers: 8
 pin_memory: True
+decay_rate: 0.1
 
-
+epoch: 100
 gpu_id: 0
 load: './pretrained/resnet50.pth'
 save_path: './snapshot/'
