@@ -20,8 +20,6 @@
 
 Please modify the dataset path in configuration files.
 
-*The groundtruth mask ids have already been pre-processed. You may use them directly.*
-
 ```
 ├── [Your Shoes Dataset Path]
     ├── Boot
